@@ -1,12 +1,14 @@
-import React from "react";
-import { SearchContainer } from "./Styles";
+import { SearchContainer, SearchInput } from "./Styles";
+import Input from "../../shared/components/Input";
 
 const Search = () => {
   return (
     <SearchContainer>
-      <>Input</>
-      <>Recent Searches</>
-      <>Browse</>
+      <SearchInput>
+        <Input className="" icon="search" onChange={() => {}} invalid={false} />
+      </SearchInput>
+      <p>Recent Searches</p>
+      <p>Browse</p>
     </SearchContainer>
   );
 };
