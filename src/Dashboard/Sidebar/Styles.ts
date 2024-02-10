@@ -2,10 +2,7 @@ import styled from "styled-components";
 import { color, sizes } from "../../shared/utils/styles";
 
 export const Sidebar = styled.div`
-  position: fixed;
-  top: 0;
   height: 100vh;
-  left: 0;
   padding: 24px;
   border-right: 1px solid ${color.borderLight};
   width: ${sizes.secondarySideBarWidth}px;

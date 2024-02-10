@@ -6,6 +6,7 @@ const DashboardSidebar = () => {
       <>Logo</>
       <SidebarMenu>
         {renderMenuItem({ text: "Home", path: "/" })}
+        {renderMenuItem({ text: "Search", path: "/" })}
         {renderMenuItem({ text: "Discover", path: "/" })}
         {renderMenuItem({ text: "Playlists", path: "/" })}
       </SidebarMenu>
