@@ -1,5 +1,12 @@
+import AppRoutes from "./AppRoutes";
+import "../App.css";
+
 const App = () => {
-  return <>App</>;
+  return (
+    <>
+      <AppRoutes />
+    </>
+  );
 };
 
 export default App;
