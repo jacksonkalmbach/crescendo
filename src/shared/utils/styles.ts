@@ -8,6 +8,9 @@ export const color = {
 
 export const sizes = {
   appNavBarLeftWidth: 64,
-  secondarySideBarWidth: 250,
+  sideBarWidth: 270,
+  appBottomTab: 100,
   minViewportWidth: 1000,
+
+  borderWidth: 1.5,
 };

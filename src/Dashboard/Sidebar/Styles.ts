@@ -2,20 +2,25 @@ import styled from "styled-components";
 import { color, sizes } from "../../shared/utils/styles";
 
 export const Sidebar = styled.div`
+  display: flex;
+  flex-direction: column;
   height: 100vh;
   padding: 24px;
-  border-right: 1px solid ${color.borderLight};
-  width: ${sizes.secondarySideBarWidth}px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  border-right: ${sizes.borderWidth}px solid ${color.borderLight};
+  width: ${sizes.sideBarWidth}px;
 `;
 
 export const SidebarMenu = styled.div`
   display: flex;
+  width: 100%;
   flex-direction: column;
-  gap: 4px;
+  gap: 2px;
 `;
 
 export const SidebarMenuItem = styled.div`
-  position: relative;
   display: flex;
   padding: 12px 16px;
   border-radius: 9999px;
