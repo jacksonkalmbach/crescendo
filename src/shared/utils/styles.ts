@@ -10,7 +10,7 @@ export const color = {
 export const sizes = {
   appNavBarLeftWidth: 64,
   sideBarWidth: 270,
-  appBottomTab: 100,
+  appBottomTab: 75,
   minViewportWidth: 1000,
 
   borderWidth: 1.5,

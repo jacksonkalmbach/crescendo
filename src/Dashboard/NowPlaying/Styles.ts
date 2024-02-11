@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { color, sizes } from "../../shared/utils/styles";
 
 export const NowPlayingContainer = styled.div`
-  height: 100vh;
+  height: calc(100vh - ${sizes.appBottomTab}px);
   width: 500px;
   box-sizing: border-box;
   border-left: ${sizes.borderWidth}px solid ${color.borderLight};

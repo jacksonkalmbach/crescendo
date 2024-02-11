@@ -5,18 +5,18 @@ import {
   ImageContainer,
 } from "./Styles";
 import Divider from "../../shared/components/Divider";
-import CircleImage from "../../shared/components/CircleImage";
+import CircleImage from "../../shared/components/ImageContainer";
 
 const NowPlaying = () => {
   return (
     <NowPlayingContainer>
       <HeaderImage />
       <div>
-        <CircleImage
+        {/* <CircleImage
           url={
             "https://i.scdn.co/image/ab67616100005174214f3cf1cbe7139c1e26ffbb"
           }
-        />
+        /> */}
         <h3>The Weeknd</h3>
       </div>
       <Divider />

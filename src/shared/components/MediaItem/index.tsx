@@ -1,5 +1,5 @@
 import { useState } from "react";
-import CircleImage from "../CircleImage";
+import CircleImage from "../ImageContainer";
 import Button from "../Button";
 import {
   ArtTextContainer,
@@ -8,19 +8,26 @@ import {
   TextContainer,
   TitleText,
 } from "./Styles";
+import ImageContainer from "../ImageContainer";
 
 interface MediaItemProps {
   title: string;
   subTitle: string;
+  mediaType: string;
   mediaImgUrl: string;
 }
 
-const MediaItem = ({ title, subTitle, mediaImgUrl }: MediaItemProps) => {
+const MediaItem = ({
+  title,
+  subTitle,
+  mediaType,
+  mediaImgUrl,
+}: MediaItemProps) => {
   const [isSelected, setIsSelected] = useState<boolean>(false);
   return (
     <StyledMediaItem>
       <ArtTextContainer>
-        <CircleImage url={mediaImgUrl} />
+        <ImageContainer url={mediaImgUrl} mediaType={mediaType} />
         <TextContainer>
           <TitleText>{title}</TitleText>
           <SubTitleText>{subTitle}</SubTitleText>
