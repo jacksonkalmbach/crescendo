@@ -6,5 +6,9 @@ export const StyledDashboardRouteContainer = styled.div`
   flex-direction: column;
   flex-grow: 1;
   box-sizing: border-box;
-  padding: 24px;
+  padding: 40px;
+  gap: 32px;
+  overflow: scroll;
 `;
+
+

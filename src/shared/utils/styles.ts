@@ -2,7 +2,7 @@ export const color = {
   primary: "#ff5833", // Orange
 
   backgroundHoverPrimary: "#fff7f4",
-  backgroundPrimaryLight: "#e0e3e5",
+  backgroundPrimaryLight: "#f8f8f8",
 
   borderLight: "#f4f7f9",
 };

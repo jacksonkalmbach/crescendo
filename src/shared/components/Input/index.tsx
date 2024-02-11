@@ -6,6 +6,7 @@ interface InputProps {
   icon: string;
   invalid: boolean;
   onChange: (value: string, event: React.ChangeEvent<HTMLInputElement>) => void;
+  placeholder?: string;
 }
 
 const defaultProps = {
@@ -17,13 +18,13 @@ const defaultProps = {
   onChange: () => {},
 };
 
-const Input = ({ icon, className, onChange }: InputProps) => {
+const Input = ({ icon, className, onChange, placeholder }: InputProps) => {
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     onChange(event.target.value, event);
   };
   return (
     <StyledInput>
-      <InputElement onChange={handleChange} />
+      <InputElement onChange={handleChange} placeholder={placeholder} />
     </StyledInput>
   );
 };
