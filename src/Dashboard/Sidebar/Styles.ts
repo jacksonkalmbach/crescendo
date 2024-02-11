@@ -25,18 +25,12 @@ export const SidebarMenuItem = styled.div`
   padding: 12px 16px;
   border-radius: 9999px;
   &:hover {
-    background: ${color.backgroundPrimaryLight};
-  }
-  &.active {
-    color: ${color.primary};
-    background: ${color.backgroundPrimaryLight};
-    i {
-      color: ${color.primary};
-    }
+    background: ${color.backgroundHoverPrimary};
   }
   cursor: pointer;
 `;
 
-export const MenuItemText = styled.div`
+export const MenuItemText = styled.a`
   padding-top: 2px;
+  text-decoration: none;
 `;

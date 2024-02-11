@@ -2,13 +2,14 @@ import React, { ReactNode, forwardRef } from "react";
 import { StyledButton } from "./Styles";
 
 interface ButtonProps {
-  className: string;
-  variant: string;
-  icon: string;
-  children: ReactNode;
-  iconSize: number;
-  disabled: boolean;
-  onClick: () => {};
+  className?: string;
+  variant?: string;
+  icon?: string;
+  children?: ReactNode;
+  iconSize?: number;
+  disabled?: boolean;
+  isActive: boolean;
+  onClick: () => void;
 }
 
 const defaultProps = {
@@ -23,13 +24,25 @@ const defaultProps = {
 };
 
 const Button = forwardRef(
-  ({ children, variant, icon, iconSize, disabled, onClick }: ButtonProps) => {
+  ({
+    isActive,
+    children,
+    variant,
+    icon,
+    iconSize,
+    disabled,
+    onClick,
+  }: ButtonProps) => {
     const handleClick = () => {
       if (!disabled) {
         onClick();
       }
     };
-    return <StyledButton onClick={handleClick}>{children}</StyledButton>;
+    return (
+      <StyledButton isActive={isActive} onClick={handleClick}>
+        {children}
+      </StyledButton>
+    );
   }
 );
 
