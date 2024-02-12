@@ -5,6 +5,8 @@ export const color = {
   backgroundPrimaryLight: "#f8f8f8",
 
   borderLight: "#f4f7f9",
+
+  textGray: "#a6a6a6",
 };
 
 export const sizes = {
@@ -14,4 +16,7 @@ export const sizes = {
   minViewportWidth: 1000,
 
   borderWidth: 1.5,
+
+  bodyFont: 16,
+  smallBodyFont: 14,
 };

@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { color } from "../../../shared/utils/styles";
+import { color, sizes } from "../../../shared/utils/styles";
+import { bodyTextStyle } from "../../../shared/utils/fonts";
 
 export const TopResultContainer = styled.div`
   width: 100%;
@@ -20,4 +21,17 @@ export const TopResultInfo = styled.div`
 
 export const ButtonContainer = styled.div`
   width: 150px;
+`;
+
+export const TopResultText = styled.div`
+  ${color.textGray};
+  ${bodyTextStyle};
+  ${sizes.bodyFont}px;
+`;
+
+export const TopResultTitle = styled.div`
+  ${bodyTextStyle}
+  font-weight: 600;
+  padding: 0;
+  font-size: 24px;
 `;

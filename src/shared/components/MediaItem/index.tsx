@@ -9,6 +9,7 @@ import {
   TitleText,
 } from "./Styles";
 import ImageContainer from "../ImageContainer";
+import MediaItemSkeleton from "./MediaItemSkeleton";
 
 interface MediaItemProps {
   title: string;
@@ -24,6 +25,10 @@ const MediaItem = ({
   mediaImgUrl,
 }: MediaItemProps) => {
   const [isSelected, setIsSelected] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+
+  if (isLoading) return <MediaItemSkeleton />;
+
   return (
     <StyledMediaItem>
       <ArtTextContainer>

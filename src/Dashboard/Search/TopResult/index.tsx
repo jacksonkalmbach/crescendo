@@ -1,13 +1,19 @@
 import { Button } from "../../../shared/components";
 import Divider from "../../../shared/components/Divider";
-import { ButtonContainer, TopResultContainer, TopResultInfo } from "./Styles";
+import {
+  ButtonContainer,
+  TopResultContainer,
+  TopResultInfo,
+  TopResultText,
+  TopResultTitle,
+} from "./Styles";
 
 const TopResult = () => {
   return (
     <TopResultContainer>
       <TopResultInfo>
-        <p>Top Result</p>
-        <h2>The Weeknd</h2>
+        <TopResultText>Top Result</TopResultText>
+        <TopResultTitle>The Weeknd</TopResultTitle>
         <Divider />
         <p>Songs</p>
         <Divider />

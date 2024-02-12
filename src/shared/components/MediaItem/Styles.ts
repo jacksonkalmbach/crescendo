@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { color } from "../../utils/styles";
+import { color, sizes } from "../../utils/styles";
 import { bodyTextStyle } from "../../utils/fonts";
 
 export const StyledMediaItem = styled.div`
@@ -34,8 +34,10 @@ export const TextContainer = styled.div`
 
 export const TitleText = styled.div`
   font-weight: bold;
+  font-size: ${sizes.bodyFont}px;
 `;
 
 export const SubTitleText = styled.div`
-  color: gray;
+  color: ${color.textGray};
+  font-size: ${sizes.smallBodyFont}px;
 `;
