@@ -1,4 +1,4 @@
-# Crescendo
+# Crescendo - (currently under development)
 
 ## About Crescendo
 
