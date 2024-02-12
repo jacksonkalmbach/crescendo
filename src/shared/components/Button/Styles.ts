@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import { color } from "../../utils/styles";
+import { bodyTextStyle } from "../../utils/fonts";
 
 interface StyledButtonProps {
   isActive: boolean;
@@ -15,6 +16,7 @@ export const StyledButton = styled.button<StyledButtonProps>`
   border: none;
   white-space: nowrap;
   transition: all 0.1s;
+  ${bodyTextStyle}
   appearance: none;
   cursor: pointer;
   ${(props) =>

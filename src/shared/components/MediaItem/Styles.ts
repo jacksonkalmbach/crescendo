@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { color } from "../../utils/styles";
+import { bodyTextStyle } from "../../utils/fonts";
 
 export const StyledMediaItem = styled.div`
   width: 100%;
@@ -28,6 +29,7 @@ export const TextContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: start;
+  ${bodyTextStyle}
 `;
 
 export const TitleText = styled.div`

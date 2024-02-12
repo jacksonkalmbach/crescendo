@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { color, sizes } from "../../shared/utils/styles";
+import { bodyTextStyle } from "../../shared/utils/fonts";
 
 export const Sidebar = styled.div`
   display: flex;
@@ -24,6 +25,7 @@ export const SidebarMenuItem = styled.div`
   display: flex;
   padding: 12px 16px;
   border-radius: 9999px;
+
   &:hover {
     background: ${color.backgroundHoverPrimary};
   }
@@ -33,4 +35,5 @@ export const SidebarMenuItem = styled.div`
 export const MenuItemText = styled.a`
   padding-top: 2px;
   text-decoration: none;
+  ${bodyTextStyle}
 `;
